@@ -1,0 +1,8 @@
+---
+pacotes_redhat:
+  - vim
+  - epel-release
+  - cmatrix
+  - ccze
+  - htop
+  - net-tools
