@@ -1,0 +1,7 @@
+---
+- name: Inicia Puppet Server no CentOS
+  service:
+    name: puppetserver
+    state: started
+    enabled: yes
+  tags: server

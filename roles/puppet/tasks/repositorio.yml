@@ -1,10 +1,18 @@
 ---
-- yum:
+- name: Repositorio YUM 
+  yum:
     name: https://yum.puppet.com/puppet6/puppet6-release-el-7.noarch.rpm
     state: present
   when: ansible_os_family == 'RedHat'
+  tags:
+    - agent
+    - server
 
-- apt:
+- name: Repositorio APT 
+  apt:
     deb: https://apt.puppetlabs.com/puppet6-release-xenial.deb
     state: present
   when: ansible_os_family == 'Debian'
+  tags:
+    - agent
+    - server
