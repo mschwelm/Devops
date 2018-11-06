@@ -1,0 +1,7 @@
+---
+- hosts: dexter
+  tasks:
+    - yum:
+        name:
+          - htop
+        state: present

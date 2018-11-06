@@ -1,0 +1,10 @@
+---
+- name: Meu primeiro YAML
+  hosts: all
+  become: true
+  connection: local
+  tasks:
+    - name: Instala pacotes
+      yum:
+        name: vim
+        state: present

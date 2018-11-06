@@ -1,0 +1,18 @@
+---
+- hosts: all
+  roles:
+    - apache
+
+
+#- hosts: all
+#  become: true
+#  tasks:
+#    - package:
+#        name: httpd
+#        state: present
+#      when: ansible_os_family == 'RedHat'
+
+#    - package:
+#        name: apache2
+#        state: present
+#      when: ansible_os_family == 'Debian'

@@ -1,0 +1,6 @@
+---
+# tasks file for puppet
+#
+- import_tasks: repositorio.yml
+- import_tasks: service_agent.yml
+
