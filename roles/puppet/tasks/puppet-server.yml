@@ -2,14 +2,14 @@
 - block:
     - name: Instala Puppet Server no CentOS
       yum:
-        name: puppet-server
+        name: puppetserver
         state: present
         update_cache: yes
       when: ansible_os_family == 'RedHat'
 
     - name: Instala Puppet agent no Ubuntu
       apt:
-        name: puppet-server
+        name: puppetserver
         state: present
         update_cache: yes
       when: ansible_os_family == 'Debian'
